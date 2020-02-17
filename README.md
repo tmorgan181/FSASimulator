@@ -3,3 +3,6 @@ This program takes in a valid .fsa file and processes it, determining the necess
 
 # FSA Files
 Included are several example FSA files, used as input to the simulator. An FSA is defined as M = (A, S, B, D) where A is the machine's alphabet, S is the set of machine states, B is the start state, and D is the delta function. Machine states with attached value 1 denote final states. T lines denote the input "tape" to be evaluated by the simulator. O lines are left blank during input, then filled with "Accepted" or "Rejected" based on whether the machine halts on a final state or not.
+
+# GraphViz
+The program GraphViz is used to generate a graphical representation of the finite state machine. The graphVizGenerator.py program takes in a valid FSA file and outputs a .gv file which can be utilized within GraphViz to draw the machine. GraphViz is available at https://graphviz.org.
