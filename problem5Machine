@@ -1,0 +1,25 @@
+digraph cs2200m1  {
+
+rankdir=LR;
+eize="8,5"
+
+node [shape = doublecircle ]; empty
+node [shape = doublecircle]; 1
+node [shape = doublecircle]; 2
+node [shape = doublecircle]; 3
+node [shape = doublecircle]; 4
+node [shape = doublecircle]; 5
+node [shape = doublecircle]; 6
+node [shape = circle]; 7
+node [shape = point] x
+
+x -> empty
+empty -> 1 [label = "d,e"]
+1 -> 2 [label = "d,e"]
+2 -> 3 [label = "d,e"]
+3 -> 4 [label = "d,e"]
+4 -> 5 [label = "d,e"]
+5 -> 6 [label = "d,e"]
+6 -> 7 [label = "d,e"]
+7 -> 7 [label = "d,e"]
+}

@@ -1,0 +1,15 @@
+A ab
+S S1,1,S2,0,S3,1,S4,0
+B S1
+D S1,a,S2,S1,b,S3
+D S2,a,S3,S2,b,S4
+D S3,a,S4,S3,b,S1
+D S4,a,S1,S4,b,S2
+T ab
+O reject
+T aba
+O accept
+T aaa
+O reject
+T aaaa
+O accept

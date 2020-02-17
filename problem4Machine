@@ -1,0 +1,26 @@
+digraph cs2200m1  {
+
+rankdir=LR;
+eize="8,5"
+
+node [shape = circle ]; empty
+node [shape = circle]; a
+node [shape = doublecircle];  b
+node [shape = circle]; bb
+node [shape = doublecircle]; odd_b
+node [shape = circle]; even_b
+node [shape = point] x
+
+x -> empty
+empty -> a [label = "a"]
+empty -> b [label = "b"]
+a -> a [label = "a"]
+a -> b [label = "b"]
+b -> odd_b [label = "a"]
+b -> bb [label = "b"]
+odd_b -> odd_b [label = "a"]
+odd_b -> even_b [label = "b"]
+even_b -> a [label = "a"]
+even_b -> bb [label = "b"]
+bb -> bb [label = "a, b"]
+}
